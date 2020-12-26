@@ -2,6 +2,10 @@
 
 The following are relevant points to the analysis of tailless planforms.  This information would be of particular relevance when investigating the tailless concept with respect to stability derivatives in a windtunnel.
 
+Youtube link to video:
+
+https://youtu.be/hzh9JC5QwOg
+
 ## The scale effect
 
 Cannot get the similarity required in a small windtunnel.
