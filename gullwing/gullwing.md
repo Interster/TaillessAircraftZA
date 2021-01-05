@@ -20,11 +20,11 @@ The outboard wing section is swept back at 30 degrees.
 
 The inboard section is swept forward 6 degrees.
 
-![1_PlanformGullwingGeometry](C:\temp\TaillessAircraftZA\gullwing\Pictures\1_PlanformGullwingGeometry.png)
+![1_PlanformGullwingGeometry](Pictures/1_PlanformGullwingGeometry.png)
 
 
 
-![2_Twist](C:\temp\TaillessAircraftZA\gullwing\Pictures\2_Twist.png)
+![2_Twist](Pictures/2_Twist.png)
 
 ### Reynolds numbers
 
