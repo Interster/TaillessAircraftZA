@@ -12,7 +12,7 @@
             "name": "Wing",
             "twist": 0.0,
             "mirror": true,
-            "cnum": 20,
+            "cnum": 24,
             "sections": [
                 {
                     "xpos": 0.0,
@@ -20,8 +20,8 @@
                     "zpos": 0.0,
                     "chord": 1.10000,
                     "twist": 0.0,
-                    "bnum": 40,
-                    "bspc": "full-cosine",
+                    "bnum": 25,
+                    "bspc": "equal",
                     "airfoil": "Cm180_14.dat",
                     "xoc": 0.0,
                     "zoc": 0.0
@@ -33,7 +33,7 @@
                     "chord": 1.10000,
                     "twist": 0.0,
                     "bnum": 40,
-                    "bspc": "full-cosine",
+                    "bspc": "semi-cosine",
                     "airfoil": "Cm180_14.dat",
                     "xoc": 0.0,
                     "zoc": 0.0
