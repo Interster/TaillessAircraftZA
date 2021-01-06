@@ -43,7 +43,7 @@
                     "ypos": 6.00000,
                     "zpos": -0.10000,
                     "chord": 0.70000,
-                    "twist": 3.5,
+                    "twist": -3.5,
                     "airfoil": "Cm180_14.dat",
                     "xoc": 0.0,
                     "zoc": 0.0

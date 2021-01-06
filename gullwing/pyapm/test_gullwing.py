@@ -6,7 +6,7 @@ from pyapm.output.msh import panelresult_to_msh
 from matplotlib.pyplot import figure
 
 #%% Create Panel System
-jsonfilepath = 'gullwing.json'
+jsonfilepath = r'../files/gullwing.json'
 psys = panelsystem_from_json(jsonfilepath)
 
 #%% Assemble and Solve
@@ -58,20 +58,22 @@ for strp in srfc.strps:
 fig = figure(figsize=(12, 8))
 ax = fig.gca()
 ax.plot(ypos, drag)
-ax.set_xlim(-2.2, 0.0)
+ax.set_xlim(-6.0, 0.0)
 ax.set_ylabel('Induced Drag Distribution [N/m]')
 _ = ax.grid(True)
 
 fig = figure(figsize=(12, 8))
 ax = fig.gca()
 ax.plot(ypos, yfrc)
-ax.set_xlim(-2.2, 0.0)
+ax.set_xlim(-6.0, 0.0)
 ax.set_ylabel('Y Force Distribution [N/m]')
 _ = ax.grid(True)
 
 fig = figure(figsize=(12, 8))
 ax = fig.gca()
 ax.plot(ypos, lift)
-ax.set_xlim(-2.2, 0.0)
+ax.set_xlim(-6.0, 0.0)
 ax.set_ylabel('Lift Distribution [N/m]')
 _ = ax.grid(True)
+
+# %%
