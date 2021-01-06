@@ -1,0 +1,74 @@
+{
+    "name": "gullwing tips",
+    "mach": 0.0,
+    "sref": 12.00000,
+    "cref": 1.0200,
+    "bref": 12.0000,
+    "xref": 0.3640,
+    "yref": 0.0,
+    "zref": 0.0,
+    "surfaces": [
+        {
+            "name": "Wing",
+            "twist": 0.0,
+            "mirror": true,
+            "cnum": 24,
+            "sections": [
+                {
+                    "xpos": 0.0,
+                    "ypos": 0.0,
+                    "zpos": 0.0,
+                    "chord": 1.10000,
+                    "twist": 0.0,
+                    "bnum": 22,
+                    "bspc": "equal",
+                    "airfoil": "Cm180_14.dat",
+                    "xoc": 0.0,
+                    "zoc": 0.0
+                },
+                {
+                    "xpos": -0.31500,
+                    "ypos": 3.000000,
+                    "zpos": 0.15700,
+                    "chord": 1.10000,
+                    "twist": 0.0,
+                    "bnum": 34,
+                    "bspc": "semi-cosine",
+                    "airfoil": "Cm180_14.dat",
+                    "xoc": 0.0,
+                    "zoc": 0.0
+                },
+                {
+                    "xpos": 1.41700,
+                    "ypos": 6.00000,
+                    "zpos": -0.10000,
+                    "chord": 0.70000,
+                    "twist": -3.5,
+                    "bnum": 10,
+                    "bspc": "full-cosine",
+                    "airfoil": "Cm180_14.dat",
+                    "xoc": 0.0,
+                    "zoc": 0.0
+                },
+                {
+                    "xpos": 2.01700,
+                    "ypos": 6.00000,
+                    "zpos": 0.40000,
+                    "chord": 0.40000,
+                    "twist": -3.5,
+                    "airfoil": "Cm180_14.dat",
+                    "xoc": 0.0,
+                    "zoc": 0.0
+                }
+            ]
+        }
+    ],
+    "cases": [
+        {
+            "name": "Design Point",
+            "alpha": 2.0,
+            "speed": 33.3,
+            "density": 1.145
+        }
+    ]
+}
