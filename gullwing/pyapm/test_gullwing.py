@@ -10,6 +10,16 @@ jsonfilepath = 'gullwing.json'
 psys = panelsystem_from_json(jsonfilepath)
 display_markdown(psys)
 
+#%% System Plots
+axt = psys.plot_twist_distribution()
+_ = axt.set_ylabel('Twist [deg]')
+_ = axt.set_xlabel('Span-Wise Coordinate - y [m]')
+axc = psys.plot_chord_distribution()
+_ = axc.set_ylabel('Chord [m]')
+_ = axc.set_xlabel('Span-Wise Coordinate - y [m]')
+axw = psys.plot_strip_width_distribution()
+_ = axw.set_ylabel('Strip Width [m]')
+
 #%% Assemble and Solve
 psys.assemble_panels()
 psys.assemble_horseshoes()
@@ -27,20 +37,13 @@ pres.set_state(alpha=alpha, speed=speed)
 #%% Solve and Display Panel Result
 display_markdown(pres)
 display_markdown(pres.surface_loads)
+display_markdown(pres.stability_derivatives)
 
 #%% Output MSH File
 mshfilepath = psys.name + '.msh'
 panelresult_to_msh(pres, mshfilepath)
 
 #%% Coefficient Distribution Plots
-axt = psys.plot_strip_twist_distribution()
-_ = axt.set_ylabel('Strip Twist [deg]')
-_ = axt.set_xlabel('Span-Wise Coordinate - y [m]')
-axt = psys.plot_strip_chord_distribution()
-_ = axt.set_ylabel('Strip Chord [m]')
-_ = axt.set_xlabel('Span-Wise Coordinate - y [m]')
-axw = psys.plot_strip_width_distribution()
-_ = axw.set_ylabel('Strip Width [m]')
 _ = axw.set_xlabel('Span-Wise Coordinate - y [m]')
 axd = pres.plot_strip_drag_force_distribution(normalise=True)
 _ = axd.set_ylabel('Drag Force Coefficient')
