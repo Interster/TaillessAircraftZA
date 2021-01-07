@@ -6,17 +6,20 @@ from pyapm.output.msh import panelresult_to_msh
 from matplotlib.pyplot import figure
 
 #%% Create Panel System
-jsonfilepath = 'gullwing.json'
+jsonfilepath = 'gullwing_tips.json'
 psys = panelsystem_from_json(jsonfilepath)
 display_markdown(psys)
 
 #%% System Plots
-axt = psys.plot_twist_distribution()
-_ = axt.set_ylabel('Twist [deg]')
-_ = axt.set_xlabel('Span-Wise Coordinate - y [m]')
+axt1 = psys.plot_twist_distribution()
+_ = axt1.set_ylabel('Strip Twist [deg]')
+_ = axt1.set_xlabel('Span-Wise Coordinate - b [m]')
+axt2 = psys.plot_tilt_distribution()
+_ = axt2.set_ylabel('Tilt [deg]')
+_ = axt2.set_xlabel('Span-Wise Coordinate - b [m]')
 axc = psys.plot_chord_distribution()
 _ = axc.set_ylabel('Chord [m]')
-_ = axc.set_xlabel('Span-Wise Coordinate - y [m]')
+_ = axc.set_xlabel('Span-Wise Coordinate - b [m]')
 axw = psys.plot_strip_width_distribution()
 _ = axw.set_ylabel('Strip Width [m]')
 
@@ -37,14 +40,12 @@ pres.set_state(alpha=alpha, speed=speed)
 #%% Solve and Display Panel Result
 display_markdown(pres)
 display_markdown(pres.surface_loads)
-display_markdown(pres.stability_derivatives)
 
 #%% Output MSH File
 mshfilepath = psys.name + '.msh'
 panelresult_to_msh(pres, mshfilepath)
 
 #%% Coefficient Distribution Plots
-_ = axw.set_xlabel('Span-Wise Coordinate - y [m]')
 axd = pres.plot_strip_drag_force_distribution(normalise=True)
 _ = axd.set_ylabel('Drag Force Coefficient')
 _ = axd.set_xlabel('Span-Wise Coordinate - y')
