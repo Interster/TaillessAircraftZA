@@ -12,7 +12,7 @@ display_markdown(psys)
 
 #%% System Plots
 axt1 = psys.plot_twist_distribution()
-_ = axt1.set_ylabel('Strip Twist [deg]')
+_ = axt1.set_ylabel('Twist [deg]')
 _ = axt1.set_xlabel('Span-Wise Coordinate - b [m]')
 axt2 = psys.plot_tilt_distribution()
 _ = axt2.set_ylabel('Tilt [deg]')
