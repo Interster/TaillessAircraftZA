@@ -3,12 +3,10 @@
 A whole universe of airfoils exist for the use of the aircraft designer.  The application of the specific aircraft will help narrow down the number of choices, but there will still be many options that would be potential candidates for a low speed tailless aircraft.  The following characteristics are most desirable for tailless sailplane aircraft operating in the low speed (below 200 kph) region.
 
 - Low pitching moment coefficient as displayed by reflexed airfoils.  This is very desirable since it would lead to lower trim moments.
-
 - Laminar flow over the largest section of chord possible, leading to low drag.  Reflexed laminar flow profiles only really started appearing in the late 70s and early 80s with the advent of computer panel methods.
-
 - High lift.
-
-- A high stall angle.
+- A high stall angle and also benign stall characteristics.  This means that the lift coefficient should not decrease rapidly after the stall.  This will improve handling at the stall.
+- The influence of surface roughness caused by rain or insects sticking to the airfoil should not be severe.  The pitching moment increase as a result of this fouling on the surface should not be severe otherwise more control surface deflection is required to overcome this increase in pitching moment.
 
 
 
