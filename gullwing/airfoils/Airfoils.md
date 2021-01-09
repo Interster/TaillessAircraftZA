@@ -22,7 +22,7 @@ CM180 - Similar to what is used on the Flair 30 aircraft.  High lift and relativ
 
 HQ36 - Used on the SB13 aircraft.  Reflexed laminar flow profile.
 
-HQ34 - Used on the SB13 aircraft.  Reflexed laminar flow profile.
+HQ34 - Used on the SB13 aircraft.  Reflexed laminar flow profile.  A closely related derivative of this airfoil is included in this repository.  (hq34der.dat)
 
 Eppler profiles - There are a number of Eppler profiles with reflex that could be suitable candidates.
 
