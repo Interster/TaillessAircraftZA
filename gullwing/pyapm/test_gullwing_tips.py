@@ -2,8 +2,7 @@
 from IPython.display import display_markdown
 from pyapm import panelsystem_from_json
 from pyapm.classes import PanelResult
-from pyapm.output.msh import panelresult_to_msh
-from matplotlib.pyplot import figure
+from pyapm.outputs.msh import panelresult_to_msh
 
 #%% Create Panel System
 jsonfilepath = 'gullwing_tips.json'
