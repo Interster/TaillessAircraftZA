@@ -6,6 +6,12 @@ Youtube link to video:
 
 https://youtu.be/hzh9JC5QwOg
 
+I also recommend the following site:
+
+https://www.mh-aerotools.de/airfoils/nf_1.htm
+
+This is required reading for anyone looking to design a tailless aircraft wing in order to understand the trade-offs that are involved in designing a high performance tailless aircraft.
+
 ## The scale effect
 
 Cannot get the similarity required in a small windtunnel.
